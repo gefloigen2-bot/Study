@@ -620,7 +620,112 @@
                 align-items: center;
             }
         }
+.scholars-circle-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border: 2px solid #e9ecef;
+    position: relative;
+    text-align: center;
+}
 
+.scholars-circle-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    height: 6px;
+    background: linear-gradient(90deg, #ffd700 0%, #ffed4a 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+.membership-headline {
+    font-size: 1.6rem;
+    color: #1a365d;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.price-line {
+    font-size: 1.4rem;
+    color: #1a365d;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.diamond-icon {
+    color: #ffd700;
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.value-text {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 25px 0;
+    text-align: left;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.checkmark {
+    color: #28a745;
+    margin-right: 10px;
+    margin-top: 2px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.join-button {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4a 100%);
+    color: #1a365d;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    font-family: inherit;
+}
+
+.join-button:hover {
+    background: linear-gradient(135deg, #ffed4a 0%, #ffd700 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.contact-btn.register {
+    background: #667eea;
+    color: white;
+}
+
+.contact-btn.register:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+}
         /* Responsive Design */
         @media (max-width: 768px) {
 </head>
@@ -655,11 +760,11 @@
                             </ul>
                         </div>
                         <div class="testimonial">
-                            <a href="#register">View testimonials and more info</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn" rel="noopener" target="_blank">Reserve Your Spot</a>View testimonials and more info</a>
                         </div>
                         <div class="pricing-section">
                             <div class="price">$72</div>
-                            <a href="#register" class="register-btn">Reserve Your Spot</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn">Reserve Your Spot</a>
                         </div>
                     </div>
                 </div>
@@ -686,11 +791,11 @@
                             </ul>
                         </div>
                         <div class="testimonial">
-                            <a href="#register">View testimonials and more info</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn" rel="noopener" target="_blank">Reserve Your Spot</a>View testimonials and more info</a>
                         </div>
                         <div class="pricing-section">
                             <div class="price">$72</div>
-                            <a href="#register" class="register-btn">Reserve Your Spot</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn">Reserve Your Spot</a>
                         </div>
                     </div>
                 </div>
@@ -717,11 +822,11 @@
                             </ul>
                         </div>
                         <div class="testimonial">
-                            <a href="#register">View testimonials and more info</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn" rel="noopener" target="_blank">Reserve Your Spot</a>View testimonials and more info</a>
                         </div>
                         <div class="pricing-section">
                             <div class="price">$72</div>
-                            <a href="#register" class="register-btn">Reserve Your Spot</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn">Reserve Your Spot</a>
                         </div>
                     </div>
                 </div>
@@ -745,11 +850,11 @@
                             </ul>
                         </div>
                         <div class="testimonial">
-                            <a href="#register">View testimonials and more info</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn" rel="noopener" target="_blank">Reserve Your Spot</a>View testimonials and more info</a>
                         </div>
                         <div class="pricing-section">
                             <div class="price">$36</div>
-                            <a href="#register" class="register-btn">Reserve Your Spot</a>
+                            <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="register-btn">Reserve Your Spot</a>
                         </div>
                     </div>
                 </div>
@@ -757,28 +862,25 @@
         </div>
 
         <!-- Scholars Section -->
-        <div class="scholars-section">
-            <h2>Scholars Membership</h2>
-            <p>Join all four learning tracks and become part of our year-long learning community. Perfect for serious students seeking deep, sustained engagement with Jewish wisdom.</p>
-            <div class="scholars-benefits">
-                <div>
-                    <h3>Scholar Benefits</h3>
-                    <ul>
-                        <li>All 4 learning tracks included</li>
-                        <li>Bring a friend to ANY class</li>
-                        <li>Priority seating & materials</li>
-                        <li>Special community events</li>
-                        <li>Ongoing learning support</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Investment</h3>
-                    <div class="price-highlight">$120</div>
-                    <p>Regular price: $250 | Save $130</p>
-                </div>
-            </div>
-            <a href="#register" class="cta">Become a Scholar</a>
+        <div style="display: flex; justify-content: center; margin: 40px 0;">
+    <div class="scholars-circle-box">
+        <h2 class="membership-headline">Join The Scholar's Circle Membership</h2>
+        
+        <ul class="benefits-list">
+            <li><span class="checkmark">✅</span> <span><strong>All courses included</strong>: Complete access to all 4 courses throughout the year</span></li>
+            <li><span class="checkmark">✅</span> <span><strong>Priority Access</strong>: Secure your spot before general registration opens</span></li>
+            <li><span class="checkmark">✅</span> <span><strong>Bring-a-friend</strong>: Complimentary guest pass to share any class with someone you'd like</span></li>
+            <li><span class="checkmark">✅</span> <span><strong>Ongoing Growth</strong>: Consistent learning that builds knowledge and connection over time</span></li>
+            <li><span class="checkmark">✅</span> <span><strong>Best Value Package</strong>: Membership pays for itself after just 2 courses</span></li>
+        </ul>
+        
+        <div class="price-line">
+            <span class="diamond-icon">💎</span>$120/year
+            <div class="value-text">(Value $700+)</div>
         </div>
+        <a class="join-button" href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" rel="noopener" target="_blank">Join The Scholar's Circle Now</a>
+    </div>
+</div>
 
         <!-- Standalone Workshops -->
         <div class="workshops-section">
@@ -824,9 +926,10 @@
                     <p>Every Other Tuesday (unless otherwise stated) • 7:30—9:00 PM</p>
                 </div>
                 <div class="contact-buttons">
-                    <a href="tel:3474506005" class="contact-btn phone">Call Now</a>
-                    <a href="mailto:info@jewishJH.com" class="contact-btn email">Email Us</a>
-                </div>
+    <a href="tel:3474506005" class="contact-btn phone">Call Now</a>
+    <a href="mailto:info@jewishJH.com" class="contact-btn email">Email Us</a>
+    <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="contact-btn register" rel="noopener" target="_blank">Register Now</a>
+</div>
             </div>
         </div>
     </div>

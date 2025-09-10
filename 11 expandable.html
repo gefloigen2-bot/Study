@@ -844,6 +844,22 @@
                 button.textContent = 'See Less';
             }
         }
+        <script>
+function sendHeight() {
+    const height = document.body.scrollHeight;
+    parent.postMessage({height: height}, '*');
+}
+
+// Send height when page loads
+window.addEventListener('load', sendHeight);
+
+// Send height when content changes
+window.addEventListener('resize', sendHeight);
+
+// Optional: Send height when content is modified
+const observer = new MutationObserver(sendHeight);
+observer.observe(document.body, {childList: true, subtree: true});
+</script>
     </script>
 </body>
 </html>

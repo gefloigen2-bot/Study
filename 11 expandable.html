@@ -267,106 +267,7 @@
             transform: translateY(-2px);
         }
 
-        /* Scholars Section */
-        .scholars-section {
-            background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%);
-            color: white;
-            padding: 50px 30px;
-            text-align: center;
-            margin: 40px 0;
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .scholars-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #ffd700 0%, #ffed4a 100%);
-        }
-
-        .scholars-section h2 {
-            color: #ffd700;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 300;
-        }
-
-        .scholars-section > p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .scholars-benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 30px 0;
-        }
-
-        .scholars-benefits > div {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            border-radius: 15px;
-            padding: 25px;
-            backdrop-filter: blur(10px);
-        }
-
-        .scholars-benefits h3 {
-            color: #ffd700;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .scholars-benefits ul {
-            text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
-            list-style: none;
-            padding: 0;
-        }
-
-        .scholars-benefits li {
-            margin-bottom: 8px;
-        }
-
-        .scholars-benefits .price-highlight {
-            font-size: 2.5rem;
-            color: #ffd700;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .scholars-section .cta {
-            background: linear-gradient(135deg, #ffd700 0%, #ffed4a 100%);
-            color: #1a365d;
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .scholars-section .cta:hover {
-            background: #ffd700;
-            transform: translateY(-2px);
-        }
-
+        
         /* Workshops Section */
         .workshops-section {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -620,6 +521,112 @@
                 align-items: center;
             }
         }
+        .scholars-circle-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border: 2px solid #e9ecef;
+    position: relative;
+    text-align: center;
+}
+
+.scholars-circle-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    height: 6px;
+    background: linear-gradient(90deg, #ffd700 0%, #ffed4a 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+.membership-headline {
+    font-size: 1.6rem;
+    color: #1a365d;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.price-line {
+    font-size: 1.4rem;
+    color: #1a365d;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.diamond-icon {
+    color: #ffd700;
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.value-text {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 25px 0;
+    text-align: left;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.checkmark {
+    color: #28a745;
+    margin-right: 10px;
+    margin-top: 2px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.join-button {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4a 100%);
+    color: #1a365d;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    font-family: inherit;
+}
+
+.join-button:hover {
+    background: linear-gradient(135deg, #ffed4a 0%, #ffd700 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.contact-btn.register {
+    background: #667eea;
+    color: white;
+}
+
+.contact-btn.register:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
@@ -820,6 +827,7 @@
                 <div class="contact-buttons">
                     <a href="tel:3474506005" class="contact-btn phone">Call Now</a>
                     <a href="mailto:info@jewishJH.com" class="contact-btn email">Email Us</a>
+                    <a href="https://www.cognitoforms.com/ChabadJacksonHeights/Courses" class="contact-btn register" rel="noopener" target="_blank">Register Now</a>
                 </div>
             </div>
         </div>
@@ -840,7 +848,8 @@
                 button.textContent = 'See Less';
             }
         }
-        <script>
+    </script>
+    <script>
 function sendHeight() {
     const height = document.body.scrollHeight;
     parent.postMessage({height: height}, '*');
